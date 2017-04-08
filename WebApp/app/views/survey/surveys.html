@@ -1,0 +1,19 @@
+
+<table class="table">
+    <thead>
+        Surveys
+    </thead>
+    <tr>
+        <th class="">
+           Survey  Name 
+        </th>
+        <th>
+        </th>
+    </tr>
+    <tr ng-repeat="survey in surveys track by $index">
+        <td> {{survey.SurveyName}} </td>
+        <td> <button type="button " class="btn btn-default " ng-click="viewSurvey(survey.SurveyId)">
+            View Survey
+           </button> </td>
+    </tr>
+</table>
